@@ -13,7 +13,7 @@ class signinpage extends StatefulWidget {
   _signinpageState createState() => _signinpageState();
 }
 
- GlobalKey <FormState> _formKey= GlobalKey();
+ // GlobalKey <FormState> _formKey= GlobalKey();
 
 AllColor allColor = AllColor();
 TextEditingController emailEditingController = TextEditingController();
@@ -26,7 +26,7 @@ class _signinpageState extends State<signinpage> {
       backgroundColor: Colors.white70,
       body: SingleChildScrollView(
         child: Form(
-          key: _formKey,
+          // key: _formKey,
           child: Column(
             children: [
               Image(
@@ -59,7 +59,7 @@ class _signinpageState extends State<signinpage> {
               ),
               InkWell(
                 onTap: () {
-                  if(_formKey.currentState!.validate())
+                  // if(_formKey.currentState!.validate())
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => HomePage()));
                 },

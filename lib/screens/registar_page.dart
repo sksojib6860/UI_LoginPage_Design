@@ -10,7 +10,7 @@ class RegisterPage extends StatefulWidget {
   _RegisterPageState createState() => _RegisterPageState();
 }
 
- GlobalKey <FormState> _formKey= GlobalKey();
+ // GlobalKey <FormState> _formKey= GlobalKey();
 
 AllColor _allColor= AllColor();
 TextEditingController emailEditingController = TextEditingController();
@@ -24,7 +24,7 @@ class _RegisterPageState extends State<RegisterPage> {
       backgroundColor: Colors.white70,
       body: SingleChildScrollView(
         child: Form(
-          key: _formKey,
+          // key: _formKey,
           child: Column(
             children: [
               Image(
@@ -69,7 +69,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
               InkWell(
                 onTap: () {
-                  if(_formKey.currentState!.validate())
+                  // if(_formKey.currentState!.validate())
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>signinpage()));
                 },
                 child: CustomButtonField(

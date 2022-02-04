@@ -29,28 +29,28 @@ class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      validator: (value){
-        bool emailValid = RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-            .hasMatch(value!);
-        if(value.isEmpty)
-          return 'This field is can not be empty!';
-
-        if(widget.labelText=="Email"){
-          if(!emailValid)
-            return "Email formet is not correct!";
-        }
-        if(widget.labelText=="Password"){
-          passStore=value;
-          if(value.length<6)
-            return "Password must be atleast 6 char!";
-        }
-        if(widget.labelText== "Confirm Password"){
-          if(passStore!=value){
-            return "Password didn't match";
-          }
-        }
-
-      },
+      // validator: (value){
+      //   bool emailValid = RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+      //       .hasMatch(value!);
+      //   if(value.isEmpty)
+      //     return 'This field is can not be empty!';
+      //
+      //   if(widget.labelText=="Email"){
+      //     if(!emailValid)
+      //       return "Email formet is not correct!";
+      //   }
+      //   if(widget.labelText=="Password"){
+      //     passStore=value;
+      //     if(value.length<6)
+      //       return "Password must be atleast 6 char!";
+      //   }
+      //   if(widget.labelText== "Confirm Password"){
+      //     if(passStore!=value){
+      //       return "Password didn't match";
+      //     }
+      //   }
+      //
+      // },
 
       controller: widget.controller,
       obscureText: widget.obsecureVal,
