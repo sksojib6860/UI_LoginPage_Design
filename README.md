@@ -1,8 +1,7 @@
 ![1](https://user-images.githubusercontent.com/96712615/197129332-623d42ec-c436-4fc9-994f-a4d24173c802.jpg)
 ![2](https://user-images.githubusercontent.com/96712615/197129366-fb54dae2-d95d-49c4-a49c-b38047fd1951.jpg)
-# New Flutter project blah blah
+# New Flutter project 
 
-A new Flutter project.
 
 ## Getting Started
 
